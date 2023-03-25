@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 })
 
 app.post("/gpt", async (req, res) => {
+	try{
 	console.log(req.body.q);
 	completion = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
@@ -24,6 +25,10 @@ app.post("/gpt", async (req, res) => {
 	});
 	const completion_text = completion.data.choices[0].message.content;
 	res.send({ val: completion_text });
+	}
+	catch(err){
+		console.log(err);
+	}
 });
 
 app.listen(port, () => {
