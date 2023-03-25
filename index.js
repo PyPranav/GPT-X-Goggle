@@ -12,6 +12,10 @@ const openai = new OpenAIApi(configuration);
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.sendStatus(200)
+})
+
 app.post("/gpt", async (req, res) => {
 	console.log(req.body.q);
 	completion = await openai.createChatCompletion({
