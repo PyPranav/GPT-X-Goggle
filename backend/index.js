@@ -13,9 +13,6 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/gpt", async (req, res) => {
-	// res.setHeader("Access-Control-Allow-Origin", "*");
-	// res.setHeader("Access-Control-Allow-Methods", "POST");
-	// res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 	console.log(req.body.q);
 	completion = await openai.createChatCompletion({
 		model: "gpt-3.5-turbo",
