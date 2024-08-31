@@ -27,7 +27,7 @@ Follow these instructions to get your GPT X Google extension up and running:
 ### Prerequisites
 
 - **Node.js**: Ensure you have Node.js installed on your machine.
-- **OpenAI API Key**: You’ll need an API key from OpenAI to enable ChatGPT. You can obtain your key by signing up on the [OpenAI website](<a href="https://platform.openai.com/account/api-keys" target="_blank">here</a>).
+- **OpenAI API Key**: You’ll need an API key from OpenAI to enable ChatGPT. You can obtain your key by signing up on the <a href="https://platform.openai.com/account/api-keys" target="_blank">OpenAI website</a>.
 
 ### Deployment
 
